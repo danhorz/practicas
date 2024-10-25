@@ -1,0 +1,13 @@
+body
+{
+    background-color: black;
+    color: white;
+}
+.codigo
+{
+    background-color: rgb(45, 45, 45);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

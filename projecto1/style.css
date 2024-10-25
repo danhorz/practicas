@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+*{
+    background-color: black;
+    font-family:"Love Ya Like A Sister", serif; 
+    color: white
+
+}
+
+/*HEADER*/
+header
+{   
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;   
+}
+.contenedor1
+{
+    
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.titulo
+{
+    font-size: 60px;
+}
+
+/* MAIN */
+main
+{
+    padding: 5%;
+
+}
+.texto-introducion
+{
+    font-size: 20px;
+    text-align: justify;
+}
+.contenedor2
+{
+    display: grid;
+    align-items: center;
+    border: 1px solid white;
+    padding: 1% 15% 1% 15%;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.contenedor-principal
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
