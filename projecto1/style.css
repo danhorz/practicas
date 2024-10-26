@@ -54,3 +54,18 @@ main
     align-items: center;
     justify-content: center;
 }
+a
+{
+    display: flex;
+    gap: 20px;
+}
+li
+{
+    list-style: none;
+    font-size: 16px;
+}
+.a-back
+{
+    font-size: 24px;
+    text-decoration: none;
+}
