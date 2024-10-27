@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="markdownStyle.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/markdown_here_logo_icon_169967.png" style="height: 50px; width: 50px;" alt="">
+        <h1 class="titulo">
+            Markdown documentación
+        </h1>
+    </header>
+    <main></main>
+    <!--codigo-->
+    <section>
+        <h2>Encabezados</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code># h1 <br>## h2 <br>### h3 <br>#### h4 <br>###### h5 <br>###### h6</code></pre>
+
+        </div>
+    </section>
+    <p>
+        EJEMPLIFICACIÓN:
+    </p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <section>
+        <h2>Separadores</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code> ========= <br> --------- </code></pre>
+
+        </div>
+    </section>
+    <p>
+        EJEMPLIFICACIÓN:
+    </p>
+    <hr style="border: 1px solid white;">
+    <br>
+    <hr style="border: 1px solid white;">
+
+    <section>
+        <h2>Formato</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code> 
+                _Italic_
+                *Italic*
+                __Bold__
+                **Bold**
+                ~~Strikethrough~~
+                Subscript~example~
+                Superscript^example^ </code></pre>
+
+        </div>
+    </section>
+    <p>
+        EJEMPLIFICACIÓN:
+    </p>
+    <div class="contenedor-formato">
+        <em>Italic</em>
+        <br>
+        <em>Italic</em>
+        <br>
+        <b>Bold</b>
+        <br>
+        <b>Bold</b>
+        <br>
+        <s> Strikethrough</s>
+        <br>
+        Subscript<sub>example</sub>
+        <br>
+        Subscript<sup>example</sup>
+    </div>
+    <section>
+        <h2>Listas desordenadas</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code> 
+                - Unordered list
+                + Unordered list
+                * Unordered list  
+            </code></pre>
+
+        </div>
+        <ul>
+            <li>Unordered list</li>
+            <li>Unordered list</li>
+            <li>Unordered list</li>
+        </ul>
+        <h2>Listas ordenadas</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code> 
+                1. Ordered list
+                1) Ordered list
+            </code></pre>
+
+        </div>
+        <ol>
+            <li>Ordered list</li>
+            <li>Ordered list</li>
+
+        </ol>
+    </section>
+
+    <footer>
+        <a class="a-back" href="../index_p1.html">
+            🔙
+        </a>
+    </footer>
+    <script>
+        document.querySelectorAll(".copy-button").forEach((button) => {
+            button.addEventListener("click", () => {
+                const code = button.parentElement.querySelector("code").textContent;
+                navigator.clipboard.writeText(code.trim());
+                button.textContent = "Copied!";
+                setTimeout(() => {
+                    button.textContent = "Copy";
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
