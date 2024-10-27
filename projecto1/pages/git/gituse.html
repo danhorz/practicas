@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +9,107 @@
     <link rel="stylesheet" href="./gituseStyle.css">
 
 
-    
-    
+
+
 </head>
+
 <body>
-   <h1>
-    INSTALAR GIT-BASH(TERMINAL)
-   </h1>
+    <header>
+        <img src="../img/logo_git.png" style="height: 50px; width: 50px;" alt="">
+        <h1>
+            Git Comandos
+        </h1>
+    </header>
+    <main>
 
-   <p>
-    Descarga GitBash
-Entra la página de descargas de Git.
-Haz click en el botón download.
-Una vez que se descargue el instalador, abre el archivo y comienza con el proceso de instalación.
-Instala GitBash
-Una vez que comience la instalación, se te aparecerán una serie de ventanas que te pedirán que elijas algunas cosas dentro de la configuración, luego presiona el botón “Next” para continuar con el proceso. Utiliza estas notas como guía:
 
-Select Components: Selecciona todas las opciones.
-Choose Default Editor: Selecciona Notepad.
-Initial Branch: Escoge la opción “Override” y deja main por defecto.
-Path: Escoge “Git from the command line and also from 3rd party software”.
-OpenSSH: Elige “Use bundled OpenSSH”.
-OpenSSL: Elige “Use the OpenSSL Library”.
-Line Ending Conversions: Elige “Checkout Windows-style, commit Unix-style”.
-Terminal Emulator: Elige “Use Windows Terminal”.
-Default Behavior for ‘git pull’: Elige “Fast Forward or Merge”.
-Credentials Manager: Elige “git credential manager”.
-Extra Options: Elige solo “Enable filesystem caching”.
-Experimental Options: No marques ninguna de las opciones.
-Cuando se termine la instalación, marca la opción “Launch GitBash” y haz click en el botón “Finish”.
-   </p>
-<br>
-<h2>
-    CONFIGURACION GLOBAL GIT
-</h2>
+        <p>Los siguientes comandos son una instruccion basica de uso de Git: </p>
 
-<!--PROBLEMA-->
 
-    <pre><code> 
-        <div class="codigo">
-            git add .
+
+    </main>
+    <section>
+        <h2>CONFIGURACION GLOBAL GIT</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>git config --global user.name 'TU NOMBRE DE USUARIO GIT'</code></pre>
+            <pre><button class="copy-button">Copy</button><code>git config --global user.email 'TU CORREO ELECTRÓNICO'</code></pre>
+            <pre><button class="copy-button">Copy</button><code>git config --global core.editor "code --wait"</code></pre>
+            <pre><button class="copy-button">Copy</button><code>git config --global init.defaultbranch main"</code></pre>
         </div>
-        
-    </code></pre>
+    </section>
+    <p>
+        Las anteriores lineas de código representan la configuracion general de git como el nombre de usuario nuestro
+        correo y es el medio de enlace entre nuestraa PC a nuestro repositorio.
+        Sin embargo, para que este enlazado debemos auntenticar mediante los si guientes comandos y acciones:
+    </p>
+    <section>
+        <h2>AUTENTICACION GIT</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>gh auth login</code></pre>
+            <pre><button class="copy-button">Copy</button><code>HTTPS <br> SSH < </code></pre>
+            <pre><button class="copy-button">Copy</button><code>Generate a new SSH Key to add to your GitHub account (Y / n): Y</code></pre>
+            <pre><button class="copy-button">Copy</button><code>Authenticate Git with your GitHub credentials (Y / n): Y</code></pre>
 
+        </div>
+    </section>
+    <p>
+       Despues de esto le das enter y
+        selecciona Login with a web browser,
+        copia el código que se muestra en tu terminal y presiona enter. - Esto abrirá GitHub.com en una nueva página.
+        Si no has iniciado sesión, se te pedirá que lo hagas.
+        GitHub te pedirá el código que copiaste del terminal. Cópialo/ingrésalo en las casillas indicadas.
+        Haz click en Authorize GitHub.
+        Puedes cerrar el navegador y presionar enter en tu terminal para continuar.
+    </p>
+    <section>
+        <h2>CLONAR UN REPOSITORIO GIT</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>git clone "enlace de tu repositorio"</code></pre>
+        </div>
+    </section>
+    <p>
+        Selecciona una carpeta en tu ordenador para importar los archivos de tu repositorio Git, luego haz click derecho y selecciona la terminal Git y colocar el codigo anterior mas tu enlace.
+    </p>
+    <section>
+        <h2>Inializar GIT en una carpeta manualmente </h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>git init</code></pre>
+        </div>
+        <h2>Eliminar el archivo Git de tu proyecto en el ordenador </h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>rm -rf .git</code></pre>
+        </div>
+    </section>
+
+    <section>
+        <h2>Subir contenido a Git y Publicarlo</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>git add .</code></pre>
+            <pre><button class="copy-button">Copy</button><code>git commit -m "comentario"</code></pre>
+            <pre><button class="copy-button">Copy</button><code>git push</code></pre>
+        </div>
+    </section>
+    <p>
+        El comando git add es para logar subir los archivos al repositorio. El comando commit es un punto de guardado previo a la publicacion
+         para el repositorio. Y git push muestra los cambios en el repositorio.
+    </p>
+    <footer>
+        <a class="a-back" href="/">
+            🔙
+        </a>
+    </footer>
+    <script>
+        document.querySelectorAll(".copy-button").forEach((button) => {
+            button.addEventListener("click", () => {
+                const code = button.parentElement.querySelector("code").textContent;
+                navigator.clipboard.writeText(code.trim());
+                button.textContent = "Copied!";
+                setTimeout(() => {
+                    button.textContent = "Copy";
+                }, 2000);
+            });
+        });
+    </script>
 </body>
+
 </html>
