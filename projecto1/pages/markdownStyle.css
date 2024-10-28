@@ -1,8 +1,13 @@
-* {
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+*
+{
+    
     color: white;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family:"Love Ya Like A Sister", serif; 
+    
 }
 
 header {
@@ -124,4 +129,32 @@ pre:hover .copy-button {
 .copy-button:hover {
     background: var(--accent);
     color: var(--bg-primary);
+}
+
+
+
+
+/* TABLAS*/
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1a1b26;
+    color: white;
+}
+
+td {
+    background-color: #1a1b26;
 }

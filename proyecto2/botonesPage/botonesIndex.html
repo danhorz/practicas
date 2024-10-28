@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ejempStyle.css">
+    <link rel="stylesheet" href="botonesSyle.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="../assets/img/button_icon-icons.com_70279.png" alt="">
+        <h1>Botones templates</h1>
+    </header>
+
+    <main>
+        <h2>Ejemplo 1:</h2>
+        <!--Ejemplo 1-->
+        <!--Contenedor-->
+        <div class="contedorEjemplos">
+            <!--Div auxiliar-->
+            <div class="contenedor-aux">
+
+                <div class="maine1">
+                    <nav class="nav-eje1">
+                        <ul class="ul-eje1">
+                            <li class="li-eje1">
+                                home
+                                <span class="span-eje1"></span>
+                                <span class="span-eje1"></span>
+                                <span class="span-eje1"></span>
+                                <span class="span-eje1"></span>
+                            </li>
+                         
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+       <!--Html1-->
+        <section>
+            <h2>CODIGO HTML</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    &lt;nav &gt;
+                        &lt;ul &gt;
+                            &lt;li &gt;
+                            home
+                            &lt;span &gt; &lt;/span &gt;
+                            &lt;span &gt; &lt;/span &gt;
+                            &lt;span &gt; &lt;/span &gt;
+                            &lt;span &gt; &lt;/span &gt;
+                            &lt;/li &gt;
+
+                           
+                        &lt;/ul &gt;
+                    &lt;/nav &gt;
+                </code></pre>
+               
+            </div>
+        </section>
+
+    <!--css1-->
+    <section>
+        <h2>CODIGO CSS</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>
+                
+                nav ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                nav ul li {
+                    --c: goldenrod;
+                    color: var(--c);
+                    font-size: 16px;
+                    border: 0.3em solid var(--c);
+                    border-radius: 0.5em;
+                    width: 12em;
+                    height: 3em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+                    line-height: 3em;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    transition: 0.5s;
+                    margin: 1em;
+                }
+                
+                nav ul li span {
+                    position: absolute;
+                    width: 25%;
+                    height: 100%;
+                    background-color: var(--c);
+                    transform: translateY(150%);
+                    border-radius: 50%;
+                    left: calc((var(--n) - 1) * 25%);
+                    transition: 0.5s;
+                    transition-delay: calc((var(--n) - 1) * 0.1s);
+                    z-index: -1;
+                }
+                
+                nav ul li:hover {
+                    color: black;
+                }
+                
+                nav ul li:hover span {
+                    transform: translateY(0) scale(2);
+                }
+                
+                nav ul li span:nth-child(1) {
+                    --n: 1;
+                }
+                
+                nav ul li span:nth-child(2) {
+                    --n: 2;
+                }
+                
+                nav ul li span:nth-child(3) {
+                    --n: 3;
+                }
+                
+                nav ul li span:nth-child(4) {
+                    --n: 4;
+                }
+            </code></pre>
+           
+        </div>
+    </section>
+    <!--Ejemplo 2-->
+    <h2>Ejemplo 2:</h2>
+    <!--Contenedor-->
+    <div class="contedorEjemplos">
+        <!--Div auxiliar-->
+        <div class="contenedor-aux">
+
+            <img src="../assets/ejemplos/ejemplo2.png" alt="">
+            
+        </div>
+    </div>
+    <!--Html1-->
+    <section>
+        <h2>CODIGO HTML</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>
+                &lt;button class="boton-flotante" onclick="alert('compras hechas')" &gt;
+                    +
+                &lt;/button&gt;
+            </code></pre>
+           
+        </div>
+    </section>
+
+    <!--CSS-->
+    <section>
+        <h2>CODIGO CSS</h2>
+        <div class="code-container">
+            <pre><button class="copy-button">Copy</button><code>
+                /*boton flotante*/
+
+                .boton-flotante {
+                position: fixed;   
+                bottom: 20px; /* Distancia desde el fondo */
+                right: 20px; /* Distancia desde el lado derecho */
+                background-color: #007BFF; /* Color de fondo */
+                color: white; /* Color del texto */
+                border: none; /* Sin borde */
+                border-radius: 50%; /* Forma redonda */
+                width: 60px; /* Ancho del botón */
+                height: 60px; /* Altura del botón */
+                font-size: 24px; /* Tamaño de la fuente */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+                cursor: pointer; /* Cambiar cursor al pasar por encima */
+                transition: background-color 0.3s; /* Efecto de transición */
+                }
+
+                /* Efecto al pasar el mouse */
+                .boton-flotante:hover {
+                    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+                }
+            </code></pre>
+           
+        </div>
+    </section>
+
+
+
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>

@@ -1,32 +1,42 @@
+/*botonees*/
+
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 *
 {
     
-    color: white;
+    
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family:"Love Ya Like A Sister", serif; 
     
+    
+    
 }
-p
-{
-    font-size: 20px;
-}
+
+/*Header*/
+
 header
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
+    background-color: black;
+    color: white;
 }
-h2,p
+main
 {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
+    color: black;
 }
+p, h2
+{   
+    font-size: 20px;
+    padding-left: 60px;
+  
+}
+
+/*codigo formato*/
 .codigo {
     word-wrap: break-word;
     background-color: red;
@@ -88,18 +98,7 @@ pre:hover .copy-button {
   color: var(--bg-primary);
 }
 footer
-{   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-}
-.a-back
 {
-    height: 100px;
-    width: 100px;
-    text-decoration: none;
-
-font-size: 50px;
-
+    background-color: black;
+    height: 200px;
 }

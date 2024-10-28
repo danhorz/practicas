@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 *
 {
@@ -10,38 +12,30 @@
     background-color: black;
     
 }
-/*header*/
 
-
-p
+header
 {
-    
-    padding: 15px;
-    text-align: justify;
-   
-}
-.titulo
-{
-    font-size: 25px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
-   
+    gap: 30px;
+}
+.titulo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+}
 
-    
-}
-header
-{
-    background-image: url('./projecto1/img/4k_backgraund.jpg');
-    background-size: cover; /* Cover the entire element */
-    background-repeat: no-repeat;
-    height: 350px; ;
-    display: block;
-    align-items: normal;
-}
+
 /*main*/
+
+p
+{   margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -56,6 +50,7 @@ header
 {
     margin-top: 30px;
     margin-bottom: 30px;
+    text-align: center;
 }
 .contenedor-lista
 {
@@ -88,29 +83,19 @@ li
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
 /*footer*/
-footer
-{
-   width: 100%;
-   height: 100px;
-  background-color: black;
-    
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
 }
 
-.contenedor3
-{
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    
-}
-.aux-flex
-{
-    border-bottom: 2px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.a-back {
+    height: 100px;
+    width: 100px;
+    text-decoration: none;
+
+    font-size: 50px;
+
 }
