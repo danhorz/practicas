@@ -115,3 +115,21 @@ pre:hover .copy-button {
   background: var(--accent);
   color: var(--bg-primary);
 }
+
+/*footer*/
+footer
+{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.a-back
+{
+    height: 100px;
+    width: 100px;
+    text-decoration: none;
+
+font-size: 50px;
+
+}
