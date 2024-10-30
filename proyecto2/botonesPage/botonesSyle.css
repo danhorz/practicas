@@ -97,6 +97,7 @@ pre:hover .copy-button {
   background: var(--accent);
   color: var(--bg-primary);
 }
+im
 footer
 {   
     display: flex;
@@ -112,4 +113,10 @@ footer
 
 font-size: 50px;
 
+}
+
+.img-ej
+{
+  height: 400px;
+  width: 420px;
 }
