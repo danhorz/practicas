@@ -20,6 +20,7 @@
     --texto-blanco:white;
     --texto-negro:black;
     --font-size-p:20px;
+    --with-contenedor:350px;
 }
 /*header*/
 
@@ -60,6 +61,7 @@ header {
     align-items: normal;
 }
 
+
 /*main*/
 main {
     display: flex;
@@ -80,7 +82,7 @@ main {
 
 .list-header {
     height: 150px;
-    width: 430px;
+    width: var(--with-contenedor);
     background-color: var(--auxiliar-oscuro);
     border-radius: 15px 15px 0px 0px;
 
@@ -93,7 +95,7 @@ main {
 }
 
 .list-content {
-    width: 430px;
+    width:350px;
     height: auto;
 
     border-radius: 0px 0px 15px 15px;

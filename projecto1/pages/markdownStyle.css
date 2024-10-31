@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+:root
+{
+    --main-color: #F3F9D2;
+    --padding-p:50px;
+    --height-icon:50px;
+    --with-icon:50px;
+    --background-footer-header:#3D0B37;
+    --auxiliar-oscuro:#63264A;
+    --auxiliar-claro:#C0D684;
+    --texto-blanco:white;
+    --texto-negro:black;
+    --font-size-p:20px;
+    --with-contenedor:350px;
+}
+
 *
 {
     
-    color: white;
+ 
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family:"Love Ya Like A Sister", serif; 
-    background-color: black;
-    
-    
+   
 }
 
 header {
@@ -17,13 +32,17 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    background-color: var(--background-footer-header);
+    color: var(--texto-blanco);
 }
-.titulo
-{
-    
+
+
+/*main*/
+main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    
+    background-color: var(--main-color);
 }
 
 p {
@@ -44,11 +63,27 @@ p,
     margin-bottom: 30px;
 }
 
+/*footer*/
 footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--background-footer-header);
+
+}
+
+.contenedor3 {
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    gap: 30px;
+
+}
+
+.a-links {
+    color: var(--texto-blanco);
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .a-back {
@@ -153,10 +188,19 @@ th, td {
 }
 
 th {
-    background-color: #1a1b26;
+    background-color: var(--auxiliar-claro);
     color: white;
 }
 
 td {
-    background-color: #1a1b26;
+    background-color: var(--main-color);
+}
+
+
+
+
+.contenedor-a-back
+{
+    display: flex;
+    justify-content: center;
 }
