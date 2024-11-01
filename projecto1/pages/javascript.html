@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Commands</title>
+    <link rel="stylesheet" href="./javascriptStyle.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/javascript_icon_130900.png" alt="">
+        <h1>JAVASCRIPT COMANDOS</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <h1>Variables en JavaScript</h1>
+        <!-- VAriables -->
+        <section>
+            <h2>Variables</h2>
+            <div class="code-container">
+                <pre><code>
+                //VARIABLE LET
+                let variableCambiable=0;
+                    variableCambiable=1;
+                //VARIABLE CONST    
+                const variableNoCambiable=0;
+                </code></pre>
+            </div>
+        </section>
+        <p><b>VARIABLE LET: </b> Uso exclusivo en un bloque de código capaz de cambiar su valor a futuro. <br>
+            <b>VARIABLE CONST: </b> Uso exclusivo en un bloque de código sin poder cambiar su valor.<br>
+            <b style="color: red;">¡WARING!</b><br>
+            Existe una variable llamada <b> var </b>, pero <b>NO SE ACONSEJA USARLO</b> por el hecho de que se puede
+            instanciar el mismo prefijo var con el mismo nombre.
+        </p>
+        <!--Enlazar etiquetas,clases y id de un HTML a JS  -->
+        <h1>Enlazar etiquetas,clases y id de un HTML a JS</h1>
+        <!-- Busqueda por clase -->
+
+        <section>
+            <h2>Buscar elemento por clase</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>document.querySelector(".nombredelaclase");</code></pre>
+            </div>
+        </section>
+        <!-- Busqueda por elemento -->
+        <section>
+            <h2>Buscar por elemento </h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>document.querySelector("main");</code></pre>
+            </div>
+        </section>
+        <!--Busqueda por id-->
+        <section>
+            <h2>Buscar por ID</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>document.querySelector("#nombredelaid");</code></pre>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!--Cambiar texto de un elemento -->
+
+        <h1>Cambiar texto de un elemento</h1>
+
+        <!-- Cambiar texto -->
+
+        <section>
+            <h2>Opción 1</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>let textoVariable=document.querySelector("texto"); </code></pre>
+                <pre><button class="copy-button">Copy</button><code>textoVariable.textContent="Modo nocturno" </code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Opción 2</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>let textoVariable=document.querySelector("Nuevo texto"); </code></pre>
+                <pre><button class="copy-button">Copy</button><code>textoVariable.innerText = 'Nuevo texto'; </code></pre>
+            </div>
+        </section>
+
+        <!--Crear, clonar, remplazar y eliminar elementos -->
+
+        <h1>Crear y eliminar elementos</h1>
+
+        <section>
+            <h2>Crear elementos</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> const newDiv=document.createElement("div"); </code></pre>
+                <pre><button class="copy-button">Copy</button><code> document.querySelector("body").appendChild(newDiv); </code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Eliminar elementos</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> const contenedorPadre = document.querySelector("elementopadre"); </code></pre>
+                <pre><button class="copy-button">Copy</button><code> contenedorPadre.removeChild(elementohijo); </code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Clonar elementos</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> let clon = elemento.cloneNode(true);  // `true` para clonar todo el contenido </code></pre>
+                <pre><button class="copy-button">Copy</button><code> document.body.appendChild(clon); </code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Remplazar elementos</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> let reemplazo = document.createElement("div"); </code></pre>
+                <pre><button class="copy-button">Copy</button><code> reemplazo.innerText = "Nuevo contenido";reemplazo.innerText = "Nuevo contenido";</code></pre>
+                <pre><button class="copy-button">Copy</button><code>document.body.replaceChild(reemplazo, elemento); </code></pre>
+            </div>
+        </section>
+
+        <!--Manejar eventos -->
+
+        <h1>Manejar eventos</h1>
+        <section>
+            <h2>Forma 1(botones)</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> //&lt;button onclick="modoNocturno"&gt; Modo Claro &lt;/button&gt;</code></pre>
+                <pre><button class="copy-button">Copy</button><code> const boton = document.getElementById('boton') </code></pre>
+                <pre><button class="copy-button">Copy</button><code> 
+                    boton.addEventListener('click',  function modoNocturno() 
+                    { 
+                    //acción
+                    }); 
+                </code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Forma 2(botones)</h2>
+            <div class="code-container">
+                
+                <pre><button class="copy-button">Copy</button><code> const boton = document.getElementById('boton') </code></pre>
+                <pre><button class="copy-button">Copy</button><code>boton.onclick = function() { alert("Botón clicado"); };</code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Eventos por teclado</h2>
+            <div class="code-container">
+                
+                <pre><button class="copy-button">Copy</button><code> 
+                    document.addEventListener("keydown", function(event) {
+                        if (event.key === "Enter") {
+                            console.log("Se presionó Enter");
+                        }
+                    });
+                </code></pre>
+                
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!--Acceder a información general del documento -->
+
+        <h1>Acceder a información general del documento</h1>
+
+        <section>
+            <h2>Cambiar título del documento</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> console.log(document.title); </code></pre>
+                <pre><button class="copy-button">Copy</button><code> document.title = "Nuevo Título"; </code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Obtener URL de la página:</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>console.log(document.URL); </code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Obtener dominio </h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> console.log(document.domain);</code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Obtener formularios:</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> let forms = document.forms; </code></pre>
+                <pre><button class="copy-button">Copy</button><code> console.log(forms);  // Muestra una colección de todos los formularios</code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Acceder a un formulario específico y sus elementos</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> let form = document.forms["nombreFormulario"];  // O document.forms[0] para el primer formulario</code></pre>
+                <pre><button class="copy-button">Copy</button><code> let input = form.elements["nombreCampo"];  // Accede a un campo específico por su nombre</code></pre>
+            </div>
+        </section>
+       
+
+        <section>
+            <h2>Obtener todas las imágenes en la página</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> let images = document.images;</code></pre>
+                <pre><button class="copy-button">Copy</button><code> console.log(images);</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Obtener todos los enlaces en la página:</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>let links = document.links;</code></pre>
+                <pre><button class="copy-button">Copy</button><code> console.log(links);</code></pre>
+            </div>
+        </section>
+
+
+
+         <!--Manipular atributos de los elementos -->
+
+         <h1>Manipular atributos de los elementos</h1>
+
+         <section>
+            <h2>Cambiar atributos src de una imagen</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> let imagen = document.getElementById("miImagen");</code></pre>
+                <pre><button class="copy-button">Copy</button><code>imagen.src = "nueva-imagen.jpg";</code></pre>
+                
+            </div>
+        </section>
+        <section>
+            <h2>Cambiar atributos href de un enlace</h2>
+
+            <div class="code-container">
+
+                <pre><button class="copy-button">Copy</button><code> let enlace = document.getElementById("miEnlace");;</code></pre>
+                <pre><button class="copy-button">Copy</button><code>enlace.href = "https://nueva-url.com";</code></pre>        
+               
+                
+            </div>
+        </section>
+
+        <!--Modificar clases CSS de los elementos -->
+
+         <h1>Modificar clases CSS de los elementos</h1>
+         <section>
+            <h2>Agregar y quitar clases</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> let elemento = document.getElementById("miElemento");</code></pre>
+                <pre><button class="copy-button">Copy</button><code>elemento.classList.add("nuevaClase");</code></pre>
+                <pre><button class="copy-button">Copy</button><code>elemento.classList.remove("otraClase");</code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Verificar si un elemento tiene una clase</h2>
+
+            <div class="code-container">
+                
+                <pre><button class="copy-button">Copy</button><code>
+                    if (elemento.classList.contains("nuevaClase")) {
+                    console.log("El elemento tiene la clase 'nuevaClase'");
+                }</code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Alternar clases</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> elemento.classList.toggle("nuevaClase");</code></pre>
+               
+            </div>
+        </section>
+
+        <!--Crear y agregar elementos al DOM-->
+
+        <h1>Crear y agregar elementos al DOM</h1>
+        <section>
+            <h2>Insertar un nuevo elemento dentro de otro</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>let nuevoElemento = document.createElement("p");</code></pre>
+                <pre><button class="copy-button">Copy</button><code>nuevoElemento.innerText = "Soy un nuevo párrafo";</code></pre>
+                <pre><button class="copy-button">Copy</button><code>document.body.appendChild(nuevoElemento);  // Lo agrega al final del `body`</code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Insertar un elemento antes de otro</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>let nuevoElemento = document.createElement("p");</code></pre>
+                <pre><button class="copy-button">Copy</button><code> let referencia = document.getElementById("elementoReferencia");</code></pre>
+                <pre><button class="copy-button">Copy</button><code>document.body.insertBefore(nuevoElemento, referencia);</code></pre>
+                
+            </div>
+        </section>
+
+
+
+        <!--Trabajar con estilos CSS de los elementos-->
+
+        <h1>Trabajar con estilos CSS de los elementos</h1>
+        <section>
+            <h2>Cambiar estilos múltiples</h2>
+
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>let elemento = document.getElementById("miElemento");</code></pre>
+                <pre><button class="copy-button">Copy</button><code> elemento.style.cssText = "color: red; font-size: 20px;";</code></pre>
+                
+                
+            </div>
+        </section>
+
+
+         <!--Métodos especiales de document -->
+
+         <h1>Métodos especiales de document</h1>
+
+         <section>
+            <h2>Ejecutar una consulta para ver si la página está cargada</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>if (document.readyState === "complete") { console.log("La página está completamente cargada");}</code></pre>  
+            </div>
+        </section>
+
+        <section>
+            <h2>Forzar el desplazamiento hacia un elemento</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>document.getElementById("miElemento").scrollIntoView({ behavior: "smooth" });</code></pre>  
+            </div>
+        </section>
+
+         <!--Creación de fragmentos de documentos (para mejorar el rendimiento)-->
+
+         <h1>Creación de fragmentos de documentos (para mejorar el rendimiento)</h1>
+        <section>
+            <h2>Usar fragmentos para evitar repintados múltiples</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>let fragment = document.createDocumentFragment();</code></pre>  
+                <pre><button class="copy-button">Copy</button>
+                <code>
+                    for (let i = 0; i < 10; i++) {
+                        let nuevoElemento = document.createElement("p");
+                        nuevoElemento.innerText = `Elemento ${i + 1}`;
+                        fragment.appendChild(nuevoElemento);
+                    }
+                    
+                </code></pre>  
+                <pre><button class="copy-button">Copy</button><code>document.body.appendChild(fragment);</code></pre> 
+            </div>
+        </section>
+        <div class="contenedor-a-back">
+            <a class="a-back" href="../index_p1.html">
+                🔙
+            </a>
+        </div>
+
+
+    </main>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="contenedor3">
+            <a target="_blank" href="https://www.github.com/danhorz" class="a-links">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/daniel-enrique-horna-zegarra-a93b85323"
+                class="a-links">Linkedin</a>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -101,13 +101,20 @@ main {
 }
 
 table {
-    width: 50%;
+    
 
     margin: 15px auto;
     border-collapse: collapse;
     text-align: justify;
+    
+
    
     /* Centra el texto en cada celda */
+}
+td
+{   padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 /*footer*/
