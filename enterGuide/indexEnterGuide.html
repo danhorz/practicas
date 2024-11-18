@@ -1,21 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Commands</title>
-    <link rel="stylesheet" href="./javascriptStyle.css">
+    <title>Enter Guide</title>
+    <link rel="stylesheet" href="./enterStyle.css">
 </head>
-
 <body>
-    <header>
-        <img src="../img/javascript_icon_130900.png" alt="">
-        <h1>JAVASCRIPT COMANDOS</h1>
-    </header>
-
-    <!-- MAIN -->
-    <main>
+<header>
+<div class="contenedorTitulo">
+    <img src="../assets/enter-isotipo-black.png" alt="">
+    <p class="titulo">GUÍA ENTER TECH SCHOOL</p>
+</div>
+<div class="contenedorNav">
+    <button id="volver" class="lenguajes">MENU PRINCIPAL</button>
+    <button id="git" class="lenguajes">GIT</button>
+    <button id="markdown" class="lenguajes">MARKDOWN</button>
+    <button class="lenguajes">HTML</button>
+    <button class="lenguajes">CSS</button>
+    <button id="javaScript" class="lenguajes">JAVASCRIPT</button>
+</div>
+</header>
+<main>
+    <template id="templateMarkdown">
+        <section>
+            <h2>Encabezados</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code># h1 <br>## h2 <br>### h3 <br>#### h4 <br>###### h5 <br>###### h6</code></pre>
+        
+            </div>
+        </section>
+        <p>
+            EJEMPLIFICACIÓN:
+        </p>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        
+        <section>
+            <h2>Separadores</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> ========= <br> --------- </code></pre>
+        
+            </div>
+        </section>
+        <p>
+            EJEMPLIFICACIÓN:
+        </p>
+        <hr style="border: 1px solid white;">
+        <br>
+        <hr style="border: 1px solid white;">
+        
+        <section>
+            <h2>Formato</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> 
+                    _Italic_
+                    *Italic*
+                    __Bold__
+                    **Bold**
+                    ~~Strikethrough~~
+                    Subscript~example~
+                    Superscript^example^ </code></pre>
+        
+            </div>
+        </section>
+        <p>
+            EJEMPLIFICACIÓN:
+        </p>
+        <div class="contenedor-formato">
+            <em>Italic</em>
+            <br>
+            <em>Italic</em>
+            <br>
+            <b>Bold</b>
+            <br>
+            <b>Bold</b>
+            <br>
+            <s> Strikethrough</s>
+            <br>
+            Subscript<sub>example</sub>
+            <br>
+            Subscript<sup>example</sup>
+        </div>
+        <section>
+            <h2>Listas desordenadas</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> 
+                    - Unordered list
+                    + Unordered list
+                    * Unordered list  
+                </code></pre>
+        
+            </div>
+            <ul>
+                <li>Unordered list</li>
+                <li>Unordered list</li>
+                <li>Unordered list</li>
+            </ul>
+            <h2>Listas ordenadas</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> 
+                    1. Ordered list
+                    1) Ordered list
+                </code></pre>
+        
+            </div>
+            <ol>
+                <li class="">Ordered list</li>
+                <li class="">Ordered list</li>
+        
+            </ol>
+        </section>
+        
+        
+        <section>
+            <h2>Links</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code> 
+                   [Link](notable.md)
+                </code></pre>
+        
+            </div>
+        </section>
+        <p>
+            EJEMPLIFICACIÓN:
+        </p>
+        
+            <a class="code-container" href="">Link</a>
+        
+        
+            <section>
+                <h2>Importar Imagen</h2>
+                <div class="code-container">
+                    <pre><button class="copy-button">Copy</button><code> 
+                    ![Image](https://notable.md/favicon.ico)
+                    </code></pre>
+        
+                </div>
+            </section>
+        
+            <section>
+                <h2>Insertar código</h2>
+                <div class="code-container">
+                    <pre><button class="copy-button">Copy</button><code> 
+                        ``` inserte codigo aqui ```
+                    </code></pre>
+        
+                </div>
+            </section>
+        
+            <section>
+                <h2>Insertar tabla</h2>
+                <div class="code-container">
+                    <pre><button class="copy-button">Copy</button><code> 
+                        | Tables | Are | Great |
+                        | ------ | --- | ----- |
+                        | •      | •   | •     |
+                        | •      | •   | •     |
+                    </code></pre>
+        
+                </div>
+            </section>
+        
+            <p>
+                EJEMPLIFICACIÓN:
+            </p>
+        
+            <table>
+                <tr>
+                    <th>Tables</th>
+                    <th>Are</th>
+                    <th>Great/th>
+                </tr>
+                <tr>
+                    <td>Fila 1 Columna 1</td>
+                    <td>Fila 1 Columna 2</td>
+                    <td>Fila 1 Columna 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 2 Columna 1</td>
+                    <td>Fila 2 Columna 2</td>
+                    <td>Fila 2 Columna 3</td>
+                </tr>
+                
+            </table>
+    </template>
+    <template id="templateGit">
+        <section>
+            <h2>CONFIGURACION GLOBAL GIT</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>git config --global user.name 'TU NOMBRE DE USUARIO GIT'</code></pre>
+                <pre><button class="copy-button">Copy</button><code>git config --global user.email 'TU CORREO ELECTRÓNICO'</code></pre>
+                <pre><button class="copy-button">Copy</button><code>git config --global core.editor "code --wait"</code></pre>
+                <pre><button class="copy-button">Copy</button><code>git config --global init.defaultbranch main"</code></pre>
+            </div>
+        </section>
+        <p>
+            Las anteriores lineas de código representan la configuracion general de git como el nombre de usuario nuestro
+            correo y es el medio de enlace entre nuestraa PC a nuestro repositorio.
+            Sin embargo, para que este enlazado debemos auntenticar mediante los si guientes comandos y acciones:
+        </p>
+        <section>
+            <h2>AUTENTICACION GIT</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>gh auth login</code></pre>
+                <pre><button class="copy-button">Copy</button><code>HTTPS <br> SSH < </code></pre>
+                <pre><button class="copy-button">Copy</button><code>Generate a new SSH Key to add to your GitHub account (Y / n): Y</code></pre>
+                <pre><button class="copy-button">Copy</button><code>Authenticate Git with your GitHub credentials (Y / n): Y</code></pre>
+    
+            </div>
+        </section>
+        <p>
+           Despues de esto le das enter y
+            selecciona Login with a web browser,
+            copia el código que se muestra en tu terminal y presiona enter. - Esto abrirá GitHub.com en una nueva página.
+            Si no has iniciado sesión, se te pedirá que lo hagas.
+            GitHub te pedirá el código que copiaste del terminal. Cópialo/ingrésalo en las casillas indicadas.
+            Haz click en Authorize GitHub.
+            Puedes cerrar el navegador y presionar enter en tu terminal para continuar.
+        </p>
+        <section>
+            <h2>CLONAR UN REPOSITORIO GIT</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>git clone "enlace de tu repositorio"</code></pre>
+            </div>
+        </section>
+        <p>
+            Selecciona una carpeta en tu ordenador para importar los archivos de tu repositorio Git, luego haz click derecho y selecciona la terminal Git y colocar el codigo anterior mas tu enlace.
+        </p>
+        <section>
+            <h2>Inializar GIT en una carpeta manualmente </h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>git init</code></pre>
+            </div>
+            <h2>Eliminar el archivo Git de tu proyecto en el ordenador </h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>rm -rf .git</code></pre>
+            </div>
+        </section>
+    
+        <section>
+            <h2>Subir contenido a Git y Publicarlo</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>git add .</code></pre>
+                <pre><button class="copy-button">Copy</button><code>git commit -m "comentario"</code></pre>
+                <pre><button class="copy-button">Copy</button><code>git push</code></pre>
+            </div>
+        </section>
+        <p>
+            El comando git add es para logar subir los archivos al repositorio. El comando commit es un punto de guardado previo a la publicacion
+             para el repositorio. Y git push muestra los cambios en el repositorio.
+        </p>
+    </template>
+    <template id="templateJavaScript">
         <h1>Variables en JavaScript</h1>
         <!-- VAriables -->
         <section>
@@ -62,20 +303,11 @@
             </div>
 
         </section>
-
-
-
-
-
         <!--Cambiar texto de un elemento -->
-
         <h1>Cambiar texto de un elemento</h1>
-
         <!-- Cambiar texto -->
-
         <section>
             <h2>Opción 1</h2>
-
             <div class="code-container">
                 <pre><button class="copy-button">Copy</button><code>let textoVariable=document.querySelector("texto"); </code></pre>
                 <pre><button class="copy-button">Copy</button><code>textoVariable.textContent="Modo nocturno" </code></pre>
@@ -166,14 +398,6 @@
                 
             </div>
         </section>
-
-
-
-
-
-
-
-
         <!--Acceder a información general del documento -->
 
         <h1>Acceder a información general del documento</h1>
@@ -372,28 +596,11 @@
                 <pre><button class="copy-button">Copy</button><code>document.body.appendChild(fragment);</code></pre> 
             </div>
         </section>
-        <div class="contenedor-a-back">
-            <a class="a-back" href="../index_p1.html">
-                🔙
-            </a>
-        </div>
-
-
-    </main>
-
-
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="contenedor3">
-            <a target="_blank" href="https://www.github.com/danhorz" class="a-links">Github</a>
-            <a target="_blank" href="https://www.linkedin.com/in/daniel-enrique-horna-zegarra-a93b85323"
-                class="a-links">Linkedin</a>
-
-        </div>
-    </footer>
+    </template>
+    <div id="contenido">
+        
+    </div>
+</main>
+<script src="./contenido.js"></script>
 </body>
-
 </html>

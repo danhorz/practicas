@@ -4,68 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos comunitarios</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Guía del programador</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header>
-        <div class="titulo">
-            <h1>Proyectos comunitarios</h1>
-        </div>
-
+        <p class="titulo">JUEGO DE LA GUÍA DEL PROGRAMADOR</p>
     </header>
     <main>
-
-        <div class="contenido-texto">
-            <p>
-                El contenido de esta pagina es para el uso de eclusivo de todos sin fines de lucro.Los proyectos
-                mostrados a continuación serán de ayuda a la comunidad en general.
-                Adicionalmente servirá como practica útil en el área de front y algunos puntos teóricos.
-            </p>
-
+        <div class="contenedor-Info">
+            <p style="font-size: 24px; margin: 1rem; color: yellow;">¡ADVERTENCIA!</p>
+            <p class="intro">El contenido de esta pagina es para el uso de eclusivo de todos sin fines de lucro. Los
+                proyectos
+                mostrados a continuación serán de ayuda a la comunidad en general. Adicionalmente servirá como practica
+                útil en el área de front y algunos puntos teóricos.</p>
         </div>
-        <!--div contenedorLista-->
-        <div class="contenedorLista">
-            <!--Header de la lista-->
-            <div class="list-header">
-                <img src="./assets/projects_folder_20300.png" alt="">
-                <h3 class="titulo-lista">PROYECTOS</h3>
-            </div>
-            <!--Contenedor de la lista-->
-            <div class="list-content">
-
-
-
-                <table>
-                    
-                    <tr>
-                       
-                      <td><img src="./projecto1/img/expediente.png" class="img-docu" alt=""></td>
-                      <td> <a href="./projecto1/index_p1.html"><h3>Enter Tech School guía definitiva</h3></a></td>
-                        
-                    </tr>
-
-                    <tr>
-                      <td><img src="./proyecto2/assets/img/file_type_css_icon_130661.png" class="img-docu" alt=""></td>
-                      <td><a href="./proyecto2/index_templates.html"><h3>Templates html css js</h3></a></td>
-                    </tr>
-                  
-                  </table>
-
-            </div>
-
+        <div class="contenedor-menu">
+            <p class="titulo">¡JUGUEMOS!</p>
+            <button id="enter" class="btn-info">ENTER TECH SCHOOL GUÍA</button>
+            <button id="algoritmos" class="btn-info">ALGORITMOS</button>
+            <button id="modelos" class="btn-info">MODELOS</button>
         </div>
-
     </main>
     <footer>
-        <div class="contenedor3">
-            <a target="_blank" href="https://www.github.com/danhorz" class="a-links">Github</a>
-            <a target="_blank" href="https://www.linkedin.com/in/daniel-enrique-horna-zegarra-a93b85323"
-                class="a-links">Linkedin</a>
-
+        <a target="_blank" href="https://www.github.com/danhorz" class="a-links"><img class="iconos"
+                src="./assets/github.png" alt=""> Github</a>
+        <a target="_blank" href="https://www.linkedin.com/in/daniel-enrique-horna-zegarra-a93b85323"
+            class="a-links"><img class="iconos" src="./assets/linkedin.png" alt="">Linkedin</a>
+        <div class="contenido-final-footer">
+         <p>@2024 Sitio web pública hecha por Daniel Horna</p>   
+         <p>con fines de práctica</p>
         </div>
     </footer>
+<script src="./app.js"></script>
 </body>
 
 </html>

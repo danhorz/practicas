@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+:root {
+    --colorfont: white;
+    --container: rgba(20, 20, 45, 0.5);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Love Ya Like A Sister", serif;
+    color: var(--colorfont);
+    font-size: 20px;
+}
+
+/* BODY */
+
+body {
+    background-image: url(./assets/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* HEADER*/
+header,
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo {
+    font-size: 72px;
+    text-align: center;
+}
+
+/* MAIN */
+/* main y contenedor de los botones */
+main,
+.contenedor-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contenedor del parrafo */
+.contenedor-Info {
+    width: 600px;
+    height: 250px;
+    background-color: var(--container);
+    border-radius: 15px;
+
+}
+
+/* parrafo */
+.intro {
+    margin: 1rem;
+    text-align: justify;
+}
+
+/* contenedor de los botones */
+.contenedor-menu {
+    margin-top: 5rem;
+    gap: 35px;
+}
+
+/* botones */
+.btn-info {
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--container);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.contenido-final-footer {
+    border-left: 2px solid white;
+    padding-left: 1rem;
+}
+
+.a-links {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+/* OTROS */
+.iconos {
+    height: 32px;
+    width: 32px;
+}
+
+/* ANIMACIONES Y TRANSFORM*/
+
+
+.btn-info,
+.a-links {
+    transition: 0.3s;
+}
+
+/* animacion botnes info */
+.btn-info:hover {
+    transform: scale(1.1);
+    background-color: rgba(20, 20, 45);
+
+}
+
+/* animacion a links */
+.a-links:hover {
+    transform: rotate(10deg);
+}
+
+/* Media querys */
+/* celulares */
+@media(max-width: 480px) {
+    * {
+        font-size: 16px;
+    }
+
+    .titulo {
+        font-size: 35px;
+    }
+
+    .contenedor-Info {
+        width: 85%;
+    }
+
+    .contenedor-menu {
+        width: 100%;
+    }
+
+    .btn-info {
+        width: 85%;
+    }
+    .contenido-final-footer{
+        display: none;
+    }
+}
+
+/* tablets verticales */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    * {
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 45px;
+    }
+
+    .contenedor-Info {
+        width: 85%;
+    }
+
+    .contenedor-menu {
+        width: 100%;
+    }
+
+    .btn-info {
+        width: 85%;
+    }
+    footer {
+       
+        gap: 10px;
+    }
+}
+
+/* tablets horizontales */
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+
+    .titulo {
+        font-size: 50px;
+    }
+
+    .contenedor-Info {
+        width: 85%;
+    }
+
+    .contenedor-menu {
+        width: 100%;
+    }
+
+    .btn-info {
+        width: 85%;
+    }
+    footer {
+       
+        gap: 30px;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 1025px) and (max-width: 1200px) {
+   
+
+    .titulo {
+        font-size: 65px;
+    }
+
+    .contenedor-Info {
+        width: 85%;
+    }
+
+    .contenedor-menu {
+        width: 100%;
+    }
+
+    .btn-info {
+        width: 85%;
+    }
+   
+}
