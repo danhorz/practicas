@@ -17,7 +17,7 @@
     <button id="git" class="lenguajes">GIT</button>
     <button id="markdown" class="lenguajes">MARKDOWN</button>
     <button class="lenguajes">HTML</button>
-    <button class="lenguajes">CSS</button>
+    <button id="css" class="lenguajes">CSS</button>
     <button id="javaScript" class="lenguajes">JAVASCRIPT</button>
 </div>
 </header>
@@ -188,6 +188,298 @@
                 </tr>
                 
             </table>
+    </template>
+    <template id="templateCSS">
+        <h1>CSS</h1>
+        <h2>Unidades de medida mas usadas</h2>
+        <p>px: Pixeles, es unidad de medida absoluta con un tamaño fijo en la pantalla.</p>
+        <p>rem: rem, es relativa al tamaño de la raíz.</p>
+        <p>em: rem, es relativa al tamaño del padre.</p>
+        <p>16px=1rem</p>
+        <section>
+            <h2>Media Queries</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*celulares*/
+                    @media(max-width: 480px) { 
+                    }
+                    
+                    /* tablets verticales */
+                    @media (min-width: 481px) and (max-width: 768px) {
+                    }
+                    
+                    /* tablets horizontales */
+                    @media (min-width: 769px) and (max-width: 1024px) {
+                    }
+                    
+                    /* Pantallas medianas */
+                    @media (min-width: 1025px) and (max-width: 1200px) {
+                    }
+                </code></pre>
+        
+            </div>
+        </section>
+        <section>
+            <h2>Propiedades principales</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    .elemento{
+                    background-color: red /* Color de fondo del elemento*/
+                    color: white /* Color de letra del elemento*/
+                    font-size: 1em /*1em=16px*/
+                    margin:1rem /* espacio exterior del elemento*/
+                    padding:1rem /*espacio interior del elemento*/
+                    }
+                </code></pre>        
+            </div>
+        </section>
+        <section>
+            <h2>Dimensiones</h2>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    .elemento{
+                        width: 100%; /* unidades de medida %, rem */
+                        height: auto;/*unidades de medida auto,vh,rem*/
+                    }
+                </code></pre>        
+            </div>
+        </section>
+        <section>
+            <h2>Display</h2>
+            <h3>Flex horizontal centrado</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    .elemento{
+                        display:flex /* Orientacion horizontal (flex-row por defecto)*/  
+                        align-items:center /* alineamiento vertical(cuando esta en flex-row)*/
+                        justify-content: center /*ajusta el posicionamiento al centro*/
+                    }                    
+                </code></pre>        
+            </div>
+        </section>
+        <section>
+            <h3>Flex vertical centrado</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    .elemento{
+                        display:flex /* Orientacion horizontal (flex-row por defecto)*/ 
+                        flex-direction:column; 
+                        align-items:center /* alineamiento vertical(cuando esta en flex-row)*/
+                        justify-content: center /*ajusta el posicionamiento al centro*/
+                    }                    
+                </code></pre>        
+            </div>
+        </section>
+        <section>
+            <h3>Grid centrado</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    .elemento{
+                        display:grid /* Orientacion vertical*/ 
+                        align-items:center;
+                    }                    
+                </code></pre>        
+            </div>
+        </section>
+        <section>
+            <h3>Grid con columnas</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    .elemento{
+                        display:grid /* Orientacion vertical*/ 
+                        align-items:center;
+                        grid-template-columns:1fr ;
+                        /*1fr refiere a una fraccion del espacio en este caso 1 columna
+                        grid-template-columns:1fr 1fr;
+                        2 columnas
+                        grid-template-columns:1fr 1fr 1fr;
+                        3columnas                        
+                        */
+                    }                    
+                </code></pre>        
+            </div>
+        </section>  
+        <section>
+            <h2>Eventos mas usados</h2>
+            <h3>Hover</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Usado para cuando pases encima de este elemento*/
+                    button:hover {
+                        background-color: blue;
+                        color: white;
+                        cursor: pointer;
+                      }    
+                </pre>        
+            </div>
+        </section>      
+        <section>
+            <h3>Focus</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Se activa cuando se señala el elemento*/
+                    input:focus {
+                        border: 2px solid blue;
+                        outline: none;
+                      }
+                </pre>        
+            </div>
+        </section>
+        <section>
+            <h3>Active</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Se activa mientras el usuario mantiene presionado el botón
+                    del ratón sobre un elemento, como un enlace o botón*/
+                    button:active {
+                        background-color: darkblue;
+                        transform: scale(0.98);
+                      }
+                </pre>        
+            </div>
+        </section>
+        <section>
+            <h3>Visited</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Se aplica a enlaces (&lt;a&gt;) que el usuario ya ha visitado.
+                        Útil para distinguir enlaces ya clicados.*/
+                    a:visited {
+                        color: purple;
+                      }
+                </pre>        
+            </div>
+        </section>
+        <section>
+            <h3>Cheaked</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Se activa cuando un elemento &lt;input&gt; de tipo checkbox o radio está seleccionado.*/
+                    input[type="checkbox"]:checked {
+                        outline: 2px solid green;
+                      }
+                </pre>        
+            </div>
+        </section>   
+        <section>
+            <h3>disabled</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Se aplica a elementos de formulario deshabilitados
+                     (&lt;input&gt;, &lt;button&gt;, &lt;select&gt;, etc.).*/
+                    input:disabled {
+                        background-color: #f0f0f0;
+                        color: gray;
+                        cursor: not-allowed;
+                      }
+                </pre>        
+            </div>
+        </section>         
+        <section>
+            <h3>enabled</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Aplica estilos a los elementos de formulario que están habilitados.*/
+                     input:enabled {
+                        background-color: white;
+                      }
+                </pre>        
+            </div>
+        </section>
+        <section>
+            <h3>placeholder-shown</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Se activa cuando un campo de entrada muestra el placeholder (y no tiene valor).*/
+                    input:placeholder-shown {
+                        color: gray;
+                        font-style: italic;
+                      }
+                </pre>        
+            </div>
+        </section>       
+        <section>
+            <h3>target</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Se activa cuando un elemento coincide con el fragmento de URL (#id).
+                    Útil para menús de navegación o páginas ancladas.*/
+                    #section1:target {
+                        background-color: yellow;
+                        border: 2px solid orange;
+                      }
+                </pre>        
+            </div>
+        </section> 
+        <section>
+            <h3>before y after</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*No son eventos, pero permiten insertar contenido dinámico
+                     antes o después de un elemento.*/
+                     button::before {
+                        content: '👉 ';
+                      }
+                      
+                      button::after {
+                        content: ' ✅';
+                      }
+                </pre>        
+            </div>
+        </section>  
+        <section>
+            <h3>Combinaciones de Pseudo-clases</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Puedes combinar pseudo-clases para estilos más avanzados.*/
+                    input:focus:invalid {
+                        border: 2px solid red;
+                      }
+                      
+                      a:hover:visited {
+                        color: orange;
+                      }
+                </pre>        
+            </div>
+        </section>  
+        <section>
+            <h2>Animaciones(Transform)</h2>
+            <h3>translate()</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    /*Mueve un elemento en el eje X, Y, o ambos.
+                    Valores en px, %, rem, etc.*/
+                    /* Mover 50px a la derecha y 20px hacia abajo */
+                    transform: translate(50px, 20px); 
+                </pre>        
+            </div>
+        </section> 
+        <section>            
+            <h3>scale()</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    transform: scale(1.5); /* Aumentar tamaño 1.5 veces */
+                    transform: scale(1, 2); /* Escalar en X al 100%, en Y al 200% */
+                </pre>        
+            </div>
+        </section> 
+        <section>            
+            <h3>rotate()</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    transform: rotate(45deg); /* Gira 45 grados */
+                    transform: rotate(-90deg); /* Gira -90 grados */
+                </pre>        
+            </div>
+        </section> 
+        <section>            
+            <h3>skew()</h3>
+            <div class="code-container">
+                <pre><button class="copy-button">Copy</button><code>
+                    transform: skew(20deg, 10deg); /* Inclina 20° en X, 10° en Y */
+                </pre>        
+            </div>
+        </section> 
     </template>
     <template id="templateGit">
         <section>

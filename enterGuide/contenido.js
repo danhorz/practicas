@@ -1,10 +1,12 @@
 const template1=document.getElementById("templateMarkdown");
 const templateInicio=document.getElementById("templateGit");
 const templateJavaScript=document.getElementById("templateJavaScript");
+const templateCSS=document.getElementById("templateCSS");
 const botonMarkdown=document.getElementById("markdown");
 const botonInicio=document.getElementById("git");
 const botonJavaScript=document.getElementById("javaScript");
 const botonMenuPrincipal=document.getElementById("volver");
+const botonCSS=document.getElementById("css");
 const contenido=document.querySelector("#contenido");
 let textdata= templateInicio.content.cloneNode(true);
 contenido.appendChild(textdata);
@@ -22,6 +24,11 @@ botonInicio.addEventListener('click',function(){
 });
 botonJavaScript.addEventListener('click',function(){
   textdata=templateJavaScript.content.cloneNode(true);
+  contenido.innerHTML="";
+  contenido.appendChild(textdata);
+});
+botonCSS.addEventListener('click',function(){
+  textdata=templateCSS.content.cloneNode(true);
   contenido.innerHTML="";
   contenido.appendChild(textdata);
 });
