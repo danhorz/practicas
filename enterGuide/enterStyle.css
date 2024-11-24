@@ -1,182 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
 :root {
-    --colorfont1: white;
-    --colorfont2: black;
-    --container: rgba(20, 20, 45, 0.5);
-    --fondoblanco:rgb(255, 255, 255,0.9);
-    --bg-primary: #1a1b26;
-    --text-primary: #a9b1d6;
-    --accent: #7aa2f7;
-    --darkblue:darkblue;
+  --colorfont1: white;
+  --colorfont2: black;
+  --container: rgba(20, 20, 45, 0.5);
+  --fondoblanco: rgb(255, 255, 255, 0.9);
+  --bg-primary: #1a1b26;
+  --text-primary: #a9b1d6;
+  --accent: #7aa2f7;
+  --darkblue: darkblue;
 }
 
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: "Love Ya Like A Sister", serif;
-    color: var(--darkblue);
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Love Ya Like A Sister", serif;
+  color: var(--darkblue);
 }
+
 body {
-    background-image: url(../assets/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url(../assets/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
 /* Header */
-header,main
-{
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: max-content;
-    font-weight: bold;
-    margin-top: 1.5rem;
+header,
+main {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: max-content;
+  font-weight: bold;
+  margin-top: 1.5rem;
 }
-.contenedorTitulo,.contenedorNav
-{   display: flex;
-    align-items: center;
-    background-color: var(--fondoblanco);
-    width: 95%;
-    font-size: 60px;
-    
-}
-.contenedorNav{
-    justify-content: end;
-    background-color: var(--colorfont1);
+
+.contenedorTitulo,
+.contenedorNav {
+  display: flex;
+  align-items: center;
+  background-color: var(--fondoblanco);
+  width: 95%;
+  font-size: 60px;
 
 }
-.contenedorTitulo{
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    gap: 10px;
-    justify-content: center;
+
+.contenedorNav {
+  justify-content: end;
+  background-color: var(--colorfont1);
+
 }
+
+.contenedorTitulo {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  gap: 10px;
+  justify-content: center;
+}
+
 /* botones */
-.lenguajes
-{
-    width: 20%;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
+.lenguajes {
+  width: 20%;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
 }
+
 /* MAIN */
-#contenido
-{
-    padding: 2rem;
-    background-color: var(--fondoblanco);
-    height: max-content;
-    width: 95%;
-    border-radius: 10px;
-    font-size: 20px;
+#contenido {
+  padding: 2rem;
+  background-color: var(--fondoblanco);
+  height: max-content;
+  width: 95%;
+  border-radius: 10px;
+  font-size: 20px;
 }
-.lenguajes:hover{
-    background-color: antiquewhite;
+
+.lenguajes:hover {
+  background-color: antiquewhite;
 }
 
 
 /* Formato codigo */
 .codigo {
-    word-wrap: break-word;
-  
-    word-break: keep-all;
-    overflow-wrap: break-word;
-    width: 80%;
-  
-  }
-  
-  .code-container {
-    background: var(--bg-primary);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  pre {
-    position: relative;
-    margin: 5px;
-    width: 100%;
-    padding: 0.5rem 0.75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  pre:last-child {
-    border-bottom: none;
-  }
-  
-  code {
-    font-family: "Fira Code", "Consolas", monospace;
-    color: var(--text-primary);
-    font-size: 0.9rem;
-    white-space: pre;
-  }
-  
-  .copy-button {
-    position: absolute;
-    top: 50%;
-    right: 4rem;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    padding: 0.15rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    opacity: 0;
-  }
-  
-  pre:hover .copy-button {
-    opacity: 1;
-  }
-  
-  .copy-button:hover {
-    background: var(--accent);
-    color: var(--bg-primary);
-  }
-  
-  main
-  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--main-color);
-  }
-  
-  section
-  {
-    background-color: var(--main-color);
-  }
+  word-wrap: break-word;
 
-  /* TABLAS*/
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  width: 80%;
+
+}
+
+.code-container {
+  background: var(--bg-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+pre {
+  position: relative;
+  margin: 5px;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+pre:last-child {
+  border-bottom: none;
+}
+
+code {
+  font-family: "Fira Code", "Consolas", monospace;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  white-space: pre;
+}
+
+.copy-button {
+  position: absolute;
+  top: 50%;
+  right: 4rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.15rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+pre:hover .copy-button {
+  opacity: 1;
+}
+
+.copy-button:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+}
+
+section {
+  background-color: var(--main-color);
+}
+
+/* TABLAS*/
 table {
-    width: 50%;
-    margin: 20px auto;
-    border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
 }
 
-table, th, td {
-    border: 1px solid black;
+table,
+th,
+td {
+  border: 1px solid black;
 }
 
-th, td {
-    padding: 10px;
-    text-align: center;
+th,
+td {
+  padding: 10px;
+  text-align: center;
 }
 
 th {
-    background-color: var(--auxiliar-claro);
-    color: white;
+  background-color: var(--auxiliar-claro);
+  color: white;
 }
 
 td {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
-
